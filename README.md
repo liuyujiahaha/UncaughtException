@@ -26,3 +26,5 @@ InstallSignalHandler();
 InstallUncaughtExceptionHandler();
 
 ```
+注意：此工具仅捕获了异常，如需要上传log，需要自己实现。
+可参考下次启动的时候来发送日志信息。
