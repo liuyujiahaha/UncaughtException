@@ -14,14 +14,15 @@
 如果日志记录得当，能够解决绝大部分崩溃的问题。
 
 这里对于UI线程与后台线程分别说明。
-
 ```
 
 ```
-InstallSignalHandler();
 //信号量截断、系统错误，C++层、底层的错误：比如野指针，除零，内存访问异常等等。
+InstallSignalHandler();
+
 ```
 ```
-InstallUncaughtExceptionHandler();
 //系统异常捕获、未捕获异常：objective-c的NSException（数组越界等）。
+InstallUncaughtExceptionHandler();
+
 ```
